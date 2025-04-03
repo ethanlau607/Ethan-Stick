@@ -1,0 +1,481 @@
+(PCB ''
+  (resolution mil 1000)
+  (structure
+    (boundary(path signal 0 0.2926 -114.4012 -0.0002 -114.1083 -0.0002 -0.2927 0.2926 0.0001 175.5057 0.0001 175.7986 -0.2927 175.7986 -114.1083 175.5057 -114.4012 0.2926 -114.4012 )
+    )
+    (via via0 via1
+    )
+    (grid via   0.25)
+    (grid wire   0.25)
+    (grid place   0.25)
+    (rule(clear 0.6034))
+    (rule(clear 0.6034 (type default_smd)))
+    (rule(clear 0.6034 (type smd_smd)))
+    (rule(width 1.005))
+    (layer 1
+      (type signal)
+    )
+    (layer 2
+      (type signal)
+    )
+
+  )
+
+  (placement
+    (component u1
+      (place u1 0 0 front 0
+      )
+    )
+
+  )
+  (library
+    (image u1
+      (pin p915 915 41 -11.2004)
+      (pin p915 930 51 -11.2004)
+      (pin p915 945 61 -11.2004)
+      (pin p915 960 71 -11.2004)
+      (pin p81 81 138.744 -17.9604)
+      (pin p96 96 169.256 -17.9604)
+      (pin p189 189 138.744 -57.3304)
+      (pin p204 204 169.256 -57.3304)
+      (pin p81 297 138.744 -96.7004)
+      (pin p96 312 169.256 -96.7004)
+      (pin p510 510 69.621 -24.3414)
+      (pin p510 525 61.747 -24.3424)
+      (pin p540 540 53.872 -24.3414)
+      (pin p540 555 45.998 -24.3444)
+      (pin p510 570 38.125 -24.3414)
+      (pin p510 585 30.251 -24.3384)
+      (pin p510 600 22.377 -24.3434)
+      (pin p510 615 14.503 -24.3494)
+      (pin p630 630 9.381 -34.3964)
+      (pin p630 645 9.384 -42.2704)
+      (pin p630 660 9.384 -50.1414)
+      (pin p630 675 9.384 -58.0184)
+      (pin p630 690 9.386 -65.8874)
+      (pin p630 705 9.38 -73.7534)
+      (pin p720 720 14.503 -83.7964)
+      (pin p720 735 22.377 -83.7994)
+      (pin p720 750 30.251 -83.7994)
+      (pin p720 765 38.125 -83.7994)
+      (pin p780 780 45.998 -83.7994)
+      (pin p780 795 53.872 -83.7994)
+      (pin p720 810 61.747 -83.7994)
+      (pin p720 825 69.621 -83.7994)
+      (pin p2447 2447 144.02 -57.8984)
+      (pin p2447 2459 41.66 -99.7744)
+    )
+
+    (padstack via0
+      (shape(circle 1 2.4016))
+      (shape(circle 2 2.4016))
+    )
+    (padstack via1
+      (shape(circle 1 2.4))
+      (shape(circle 2 2.4))
+    )
+
+    (padstack p915
+      (shape(circle 1 7.0866 0 0))
+      (shape(circle 2 7.0866 0 0))
+    )
+    (padstack p81
+      (shape(polygon 1 0.01 3.445 1.9685 3.445 -1.9685 -3.4448 -1.9685 -3.4448 1.9685))
+    )
+    (padstack p96
+      (shape(polygon 1 0.01 3.4448 1.9685 3.4448 -1.9685 -3.445 -1.9685 -3.445 1.9685))
+    )
+    (padstack p189
+      (shape(polygon 1 0.01 3.445 1.9686 3.445 -1.9684 -3.4448 -1.9684 -3.4448 1.9686))
+    )
+    (padstack p204
+      (shape(polygon 1 0.01 3.4448 1.9686 3.4448 -1.9684 -3.445 -1.9684 -3.445 1.9686))
+    )
+    (padstack p510
+      (shape(polygon 2 0.01 -2.7564 4.9213 -2.7564 -4.9213 2.7554 -4.9213 2.7554 4.9213))
+    )
+    (padstack p540
+      (shape(polygon 2 0.01 -2.7554 4.9213 -2.7554 -4.9213 2.7564 -4.9213 2.7564 4.9213))
+    )
+    (padstack p630
+      (shape(polygon 2 0.01 -3.3466 -2.7562 3.3464 -2.7562 3.3464 2.7556 -3.3466 2.7556))
+    )
+    (padstack p720
+      (shape(polygon 2 0.01 2.7554 -4.9209 2.7554 4.9217 -2.7564 4.9217 -2.7564 -4.9209))
+    )
+    (padstack p780
+      (shape(polygon 2 0.01 2.7564 -4.9209 2.7564 4.9217 -2.7554 4.9217 -2.7554 -4.9209))
+    )
+    (padstack p2447
+      (shape(circle 1 2.4 0 0))
+      (shape(circle 2 2.4 0 0))
+    )
+  )
+  (network
+    (net U1_6
+      (pins u1-96 u1-204 u1-735 u1-750 u1-2447)
+    )
+    (net U1_5
+      (pins u1-312 u1-765 u1-2459)
+    )
+    (net U1_9
+      (pins u1-915 u1-81 u1-189 u1-297 u1-615)
+    )
+    (net U1_14
+      (pins u1-945 u1-540)
+    )
+    (net U1_13
+      (pins u1-960 u1-555)
+    )
+    (net U1_8
+      (pins u1-930 u1-720)
+    )
+    (net U1_16
+      (pins u1-510)
+    )
+    (net U1_15
+      (pins u1-525)
+    )
+    (net U1_12
+      (pins u1-570)
+    )
+    (net U1_11
+      (pins u1-585)
+    )
+    (net U1_10
+      (pins u1-600)
+    )
+    (net U1_22
+      (pins u1-630)
+    )
+    (net U1_21
+      (pins u1-645)
+    )
+    (net U1_20
+      (pins u1-660)
+    )
+    (net U1_19
+      (pins u1-675)
+    )
+    (net U1_18
+      (pins u1-690)
+    )
+    (net U1_17
+      (pins u1-705)
+    )
+    (net U1_4
+      (pins u1-780)
+    )
+    (net U1_3
+      (pins u1-795)
+    )
+    (net U1_2
+      (pins u1-810)
+    )
+    (net U1_1
+      (pins u1-825)
+    )
+    (class U1_6 U1_6
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_5 U1_5
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_9 U1_9
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_14 U1_14
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_13 U1_13
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_8 U1_8
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_16 U1_16
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_15 U1_15
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_12 U1_12
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_11 U1_11
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_10 U1_10
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_22 U1_22
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_21 U1_21
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_20 U1_20
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_19 U1_19
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_18 U1_18
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_17 U1_17
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_4 U1_4
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_3 U1_3
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_2 U1_2
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+    (class U1_1 U1_1
+      (circuit 
+        (use_via via1)
+      )
+      (rule 
+        (width 1)
+        (clearance 0.6)
+      )
+    )
+
+  )
+
+   (wiring
+    (wire(path 2 1 30.25 -77.7764 50.128 -57.8984 144.02 -57.8984 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 2 1 30.25 -83.7984 30.25 -78.1744 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 2 1 22.376 -83.7984 22.376 -77.7764 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 2 1 30.25 -77.7764 22.376 -77.7764 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 2 1 38.124 -83.7984 38.124 -96.2384 41.66 -99.7744 )
+      (net U1_5)
+      (type protect)
+    )
+    (wire(path 2 1 14.503 -24.3494 14.503 -18.3264 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 2 1 14.503 -18.3264 21.629 -11.2004 41 -11.2004 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 2 1 53.872 -24.3414 53.872 -18.3184 )
+      (net U1_14)
+      (type protect)
+    )
+    (wire(path 2 1 53.872 -18.3184 53.882 -18.3184 61 -11.2004 )
+      (net U1_14)
+      (type protect)
+    )
+    (wire(path 2 1 45.998 -24.3444 45.998 -18.3214 )
+      (net U1_13)
+      (type protect)
+    )
+    (wire(path 2 1 45.998 -18.3214 50.455 -18.3214 56 -12.7764 56 -9.2434 58.811 -6.4324 66.232 -6.4324 71 -11.2004 )
+      (net U1_13)
+      (type protect)
+    )
+    (wire(path 2 1 14.503 -83.7954 14.503 -61.1794 41.989 -33.6934 41.989 -18.6044 49.393 -11.2004 51 -11.2004 )
+      (net U1_8)
+      (type protect)
+    )
+    (wire(path 1 1 164.71 -57.3304 164.142 -57.8984 144.02 -57.8984 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 1 1 169.256 -57.3304 164.71 -57.3304 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 1 1 169.256 -57.3304 173.802 -57.3304 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 1 1 169.256 -17.9604 173.802 -17.9604 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 1 1 173.802 -57.3304 173.802 -17.9604 )
+      (net U1_6)
+      (type protect)
+    )
+    (wire(path 1 1 41.66 -99.7744 161.636 -99.7744 164.71 -96.7004 )
+      (net U1_5)
+      (type protect)
+    )
+    (wire(path 1 1 169.256 -96.7004 164.71 -96.7004 )
+      (net U1_5)
+      (type protect)
+    )
+    (wire(path 1 1 138.744 -96.7004 143.29 -96.7004 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 139.881 -57.3304 143.29 -60.7394 143.29 -96.7004 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 139.881 -57.3304 141.017 -57.3304 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 138.744 -57.3304 139.881 -57.3304 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 138.744 -17.9604 47.76 -17.9604 41 -11.2004 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 141.017 -17.9604 138.744 -17.9604 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 141.017 -17.9604 143.29 -17.9604 )
+      (net U1_9)
+      (type protect)
+    )
+    (wire(path 1 1 141.017 -57.3304 143.29 -55.0574 143.29 -17.9604 )
+      (net U1_9)
+      (type protect)
+    )
+    )
+
+)
