@@ -121,7 +121,7 @@ def update_display():
 def music():
     time.sleep(0.2)
     global button1, button2, button3, page,display_lines
-    music_options = ["Little Star","Birthday Song", "Exit"]
+    music_options = ["Little Star", "Exit"]
     music_index=0
     while True:
         if page == 'music':
