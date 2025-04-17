@@ -1,5 +1,5 @@
 from machine import Pin, I2C,PWM
-from ssd1306_i2c_flag import SSD1306_I2C_FLAG
+import ssd1306
 import time,math
 
 
@@ -68,11 +68,11 @@ page="home"
 home_options = ["Calculator","Guess Number","Pi Game","Music"]
 
 home_displaying_index = 0
-# 指定 SCL 在 5 號腳位 (D1), SDA 在 4 號腳位 (D2)
-i2c = I2C(scl=Pin(5), sda=Pin(4))
 
+
+# 指定 SCL 在 5 號腳位 (D1), SDA 在 4 號腳位 (D2)
 # 指定寬 128 像素, 高 64 像素, 以及要使用的 I2C 物件
-oled = SSD1306_I2C_FLAG(128, 64, i2c)
+oled = ssd1306.SSD1306_I2C(128, 64, I2C(scl=Pin(5), sda=Pin(4)))
 
 
 def play(beeper, melody, duty = 10):
@@ -117,6 +117,7 @@ def update_display():
     for i, line in enumerate(display_lines):
         oled.text(line, 0, i * 16)  # 每行間隔16像素
     oled.show()
+
 
 def music():
     time.sleep(0.2)
